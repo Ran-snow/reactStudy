@@ -1,6 +1,7 @@
 import React,{Component , Fragment} from 'react';
-import './style.css';
 import Todoitem from './Todoitem';
+
+import './style.css';
 
 class TodoList extends Component{
 
@@ -12,12 +13,17 @@ class TodoList extends Component{
             list:[
             ]
         }
+
+        this.handlerInputChange = this.handlerInputChange.bind(this);
+        this.handleBtnClick = this.handleBtnClick.bind(this);
+        this.handleItemDelete = this.handleItemDelete.bind(this);
     }
 
     handlerInputChange(e){
-        this.setState({
-            inputValue:e.target.value
-        });
+        const value = e.target.value;
+        this.setState(()=>({
+            inputValue:value
+        }));
     }
 
     handleBtnClick(e){
@@ -40,6 +46,25 @@ class TodoList extends Component{
         });
     }
 
+    getTodoItem(){
+        return  this.state.list.map((item,index)=>{
+                return (
+                    // <li 
+                    //     key={index} 
+                    //     onClick={this.handleItemDelete.bind(this,index)}
+                    //     dangerouslySetInnerHTML={{__html:item}}
+                    // >
+                    // </li>
+                    <Todoitem 
+                        content = {item}
+                        key={index} 
+                        index = {index}
+                        deleteItem = {this.handleItemDelete}
+                    />
+                )
+            })
+    }
+
     render(){
         return(
             <Fragment>
@@ -50,29 +75,12 @@ class TodoList extends Component{
                     id = "insertArea"
                     className = 'input'
                     value = {this.state.inputValue}
-                    onChange ={this.handlerInputChange.bind(this)}
+                    onChange ={this.handlerInputChange}
                 />
-                <button onClick = {this.handleBtnClick.bind(this)}>Submit</button>
+                <button onClick = {this.handleBtnClick}>Submit</button>
             </div>
                 <ul>
-                    {
-                        this.state.list.map((item,index)=>{
-                            return (
-                                    // <li 
-                                    //     key={index} 
-                                    //     onClick={this.handleItemDelete.bind(this,index)}
-                                    //     dangerouslySetInnerHTML={{__html:item}}
-                                    // >
-                                    // </li>
-                                    <Todoitem 
-                                        content = {item}
-                                        key={index} 
-                                        index = {index}
-                                        deleteItem = {this.handleItemDelete.bind(this)}
-                                    />
-                                    )
-                        })
-                    }
+                    {this.getTodoItem()}
                 </ul>
             </Fragment>
         )
