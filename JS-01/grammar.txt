@@ -1,0 +1,44 @@
+如果变量赋值的时候，忘了写var命令，这条语句也是有效的。
+var a = 1;
+// 基本等同
+a = 1;
+
+JavaScript 是一种动态类型语言，也就是说，变量的类型没有限制，变量可以随时更改类型。
+
+JavaScript 有三种方法，可以确定一个值到底是什么类型。
+typeof运算符
+instanceof运算符
+Object.prototype.toString方法
+
+typeof null -> "object" BUG
+
+undefined == null
+// true
+
+如果 JavaScript 预期某个位置应该是布尔值，会将该位置上现有的值自动转为布尔值。转换规则是除了下面六个值被转为false，其他值都视为true。
+undefined
+null
+false
+0
+NaN
+""或''（空字符串）
+注意，空数组（[]）和空对象（{}）对应的布尔值，都是true。
+
+0.1 + 0.2 === 0.3
+// false
+
+0.3 / 0.1
+// 2.9999999999999996
+
+(0.3 - 0.2) === (0.2 - 0.1)
+// false
+
+(1 / +0) === (1 / -0) // false
+上面的代码之所以出现这样结果，是因为除以正零得到+Infinity，除以负零得到-Infinity，这两者是不相等的（关于Infinity详见下文）。
+
+NaN不等于任何值，包括它本身。
+NaN === NaN // false
+
+parseInt方法用于将字符串转为整数。
+parseInt('123') // 123
+字符串转为整数的时候，是一个个字符依次转换，如果遇到不能转为数字的字符，就不再进行下去，返回已经转好的部分。
