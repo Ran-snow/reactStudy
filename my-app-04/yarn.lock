@@ -1178,11 +1178,11 @@
     strip-json-comments "^3.1.1"
 
 "@fluentui/date-time-utilities@^8.2.3":
-  version "8.2.2"
-  resolved "https://registry.nlark.com/@fluentui/date-time-utilities/download/@fluentui/date-time-utilities-8.2.2.tgz#535d5bb6ee7ccfa8cc774c790e31d3d5d4edbad6"
-  integrity sha1-U11btu58z6jMd0x5DjHT1dTtutY=
+  version "8.2.3"
+  resolved "https://registry.yarnpkg.com/@fluentui/date-time-utilities/-/date-time-utilities-8.2.3.tgz#99c304aea46f5278d4f799652eba0cc97801f4d0"
+  integrity sha512-lbXaKXpeWymzGk3YNwT3hUPfUSnYO3x6wS2Rj3ySzDY6OkMLOBBV6UVa2uRVRXCio5GcJyMo9Wtgv77gmHl2fQ==
   dependencies:
-    "@fluentui/set-version" "^8.1.4"
+    "@fluentui/set-version" "^8.1.5"
     tslib "^2.1.0"
 
 "@fluentui/dom-utilities@^2.1.5":
@@ -1277,7 +1277,7 @@
     "@microsoft/load-themed-styles" "^1.10.26"
     tslib "^2.1.0"
 
-"@fluentui/set-version@^8.1.4", "@fluentui/set-version@^8.1.5":
+"@fluentui/set-version@^8.1.5":
   version "8.1.5"
   resolved "https://registry.npmmirror.com/@fluentui/set-version/download/@fluentui/set-version-8.1.5.tgz#68d3d8c7fbefba20b3d1aef71fcc730ca46dd353"
   integrity sha512-AfaycaduWd/aErqEmrAUWpr2gpZrkaSe6D9noXhtVH3JlreRuFM78Ji1oE4f8cpWxSA/K5qb7BT6x4z4I2Bs+A==
@@ -7522,9 +7522,9 @@ nan@^2.12.1:
   integrity sha512-M2ufzIiINKCuDfBSAUr1vWQ+vuVcA9kqx8JJUsbQi6yf1uGRyb7HfpdfUr5qLXf3B/t8dPvcjhKMmlfnP47EzQ==
 
 nanoid@^3.1.20:
-  version "3.1.20"
-  resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.1.20.tgz#badc263c6b1dcf14b71efaa85f6ab4c1d6cfc788"
-  integrity sha512-a1cQNyczgKbLX9jwbS/+d7W8fX/RfgYR7lVWwWOGIPNgK2m0MWvrGF6/m4kk6U3QcFMnZf3RIhL0v2Jgh/0Uxw==
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.2.0.tgz#62667522da6673971cca916a6d3eff3f415ff80c"
+  integrity sha512-fmsZYa9lpn69Ad5eDn7FMcnnSR+8R34W9qJEijxYhTbfOWzr22n1QxCMzXLK+ODyW2973V3Fux959iQoUxzUIA==
 
 nanomatch@^1.2.9:
   version "1.2.13"
