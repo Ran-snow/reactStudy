@@ -1178,11 +1178,11 @@
     strip-json-comments "^3.1.1"
 
 "@fluentui/date-time-utilities@^8.2.3":
-  version "8.2.2"
-  resolved "https://registry.nlark.com/@fluentui/date-time-utilities/download/@fluentui/date-time-utilities-8.2.2.tgz#535d5bb6ee7ccfa8cc774c790e31d3d5d4edbad6"
-  integrity sha1-U11btu58z6jMd0x5DjHT1dTtutY=
+  version "8.5.3"
+  resolved "https://registry.yarnpkg.com/@fluentui/date-time-utilities/-/date-time-utilities-8.5.3.tgz#5c5eff49e8225c0ed53be70b5bb6821d55c76948"
+  integrity sha512-jwbwcJlnerdjENIAfn/YHxl5H2sQruReOMWXWMgmvX0CmcbqsN9VBxBt+E35Tlr4Ds3MbGs60eyfZUIPpaB5RQ==
   dependencies:
-    "@fluentui/set-version" "^8.1.4"
+    "@fluentui/set-version" "^8.2.3"
     tslib "^2.1.0"
 
 "@fluentui/dom-utilities@^2.1.5":
@@ -1277,10 +1277,17 @@
     "@microsoft/load-themed-styles" "^1.10.26"
     tslib "^2.1.0"
 
-"@fluentui/set-version@^8.1.4", "@fluentui/set-version@^8.1.5":
+"@fluentui/set-version@^8.1.5":
   version "8.1.5"
   resolved "https://registry.npmmirror.com/@fluentui/set-version/download/@fluentui/set-version-8.1.5.tgz#68d3d8c7fbefba20b3d1aef71fcc730ca46dd353"
   integrity sha512-AfaycaduWd/aErqEmrAUWpr2gpZrkaSe6D9noXhtVH3JlreRuFM78Ji1oE4f8cpWxSA/K5qb7BT6x4z4I2Bs+A==
+  dependencies:
+    tslib "^2.1.0"
+
+"@fluentui/set-version@^8.2.3":
+  version "8.2.3"
+  resolved "https://registry.yarnpkg.com/@fluentui/set-version/-/set-version-8.2.3.tgz#fe9761353dbea6a02f4a140f9bc67e5dd07ca22d"
+  integrity sha512-/+5vrI1Bq/ZsNDEK9++RClnDOeCILS8RXxZb7OAqmOc8GnPScxKcIN8e/1bosUxTjb2EB1KbVk6XeUpk0WvQIg==
   dependencies:
     tslib "^2.1.0"
 
@@ -3282,12 +3289,7 @@ caniuse-api@^3.0.0:
     lodash.memoize "^4.1.2"
     lodash.uniq "^4.5.0"
 
-caniuse-lite@^1.0.0, caniuse-lite@^1.0.30000981, caniuse-lite@^1.0.30001109, caniuse-lite@^1.0.30001125, caniuse-lite@^1.0.30001181:
-  version "1.0.30001284"
-  resolved "https://registry.npmmirror.com/caniuse-lite/download/caniuse-lite-1.0.30001284.tgz"
-  integrity sha512-t28SKa7g6kiIQi6NHeOcKrOrGMzCRrXvlasPwWC26TH2QNdglgzQIRUuJ0cR3NeQPH+5jpuveeeSFDLm2zbkEw==
-
-caniuse-lite@^1.0.30001284:
+caniuse-lite@^1.0.0, caniuse-lite@^1.0.30000981, caniuse-lite@^1.0.30001109, caniuse-lite@^1.0.30001125, caniuse-lite@^1.0.30001181, caniuse-lite@^1.0.30001284:
   version "1.0.30001284"
   resolved "https://registry.npmmirror.com/caniuse-lite/download/caniuse-lite-1.0.30001284.tgz#d3653929ded898cd0c1f09a56fd8ca6952df4fca"
   integrity sha512-t28SKa7g6kiIQi6NHeOcKrOrGMzCRrXvlasPwWC26TH2QNdglgzQIRUuJ0cR3NeQPH+5jpuveeeSFDLm2zbkEw==
@@ -4107,9 +4109,9 @@ decimal.js@^10.2.0:
   integrity sha512-KaL7+6Fw6i5A2XSnsbhm/6B+NuEA7TZ4vqxnd5tXz9sbKtrN9Srj8ab4vKVdK8YAqZO9P1kg45Y6YLoduPf+kw==
 
 decode-uri-component@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.0.tgz#eb3913333458775cb84cd1a1fae062106bb87545"
-  integrity sha1-6zkTMzRYd1y4TNGh+uBiEGu4dUU=
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.2.tgz#e69dbe25d37941171dd540e024c444cd5188e1e9"
+  integrity sha512-FqUYQ+8o158GyGTrMFJms9qh3CqTKvAqgqsTnkLI8sKu0028orqBhxNMFkFen0zGyg6epACD32pjVk58ngIErQ==
 
 dedent@^0.7.0:
   version "0.7.0"
